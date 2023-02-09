@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct CHAMarathonHRVApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @StateObject private var dataManager = DataManager()
+
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environmentObject(dataManager)
     }
+  }
 }

@@ -11,6 +11,12 @@
 		2D351DD7297C700100098180 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D351DD6297C700100098180 /* ContentView.swift */; };
 		2D351DD9297C700100098180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D351DD8297C700100098180 /* Assets.xcassets */; };
 		2D351DDC297C700100098180 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D351DDB297C700100098180 /* Preview Assets.xcassets */; };
+		2D351DE4297C959B00098180 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D351DE3297C959B00098180 /* DataManager.swift */; };
+		2D351DE6297D7DB900098180 /* CBUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D351DE5297D7DB900098180 /* CBUUIDs.swift */; };
+		2D351DE8297D7DDE00098180 /* BlePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D351DE7297D7DDE00098180 /* BlePeripheral.swift */; };
+		2D351DEC297DFDE200098180 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D351DEB297DFDE200098180 /* RingBuffer.swift */; };
+		2D351DEE297E037900098180 /* RRValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D351DED297E037900098180 /* RRValues.swift */; };
+		2D351DFF2985846100098180 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2D351DFE2985846100098180 /* CryptoSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		2D351DD6297C700100098180 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D351DD8297C700100098180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D351DDB297C700100098180 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D351DE2297C707E00098180 /* CHAMarathonHRV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CHAMarathonHRV.entitlements; sourceTree = "<group>"; };
+		2D351DE3297C959B00098180 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		2D351DE5297D7DB900098180 /* CBUUIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBUUIDs.swift; sourceTree = "<group>"; };
+		2D351DE7297D7DDE00098180 /* BlePeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlePeripheral.swift; sourceTree = "<group>"; };
+		2D351DEB297DFDE200098180 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
+		2D351DED297E037900098180 /* RRValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRValues.swift; sourceTree = "<group>"; };
+		2D351E002986232300098180 /* CHAMarathonHRV-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CHAMarathonHRV-BridgingHeader.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D351DFF2985846100098180 /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +49,12 @@
 		2D351DC8297C700000098180 = {
 			isa = PBXGroup;
 			children = (
+				2D351E002986232300098180 /* CHAMarathonHRV-BridgingHeader.h */,
+				2D351DED297E037900098180 /* RRValues.swift */,
+				2D351DEB297DFDE200098180 /* RingBuffer.swift */,
+				2D351DE7297D7DDE00098180 /* BlePeripheral.swift */,
+				2D351DE5297D7DB900098180 /* CBUUIDs.swift */,
+				2D351DE3297C959B00098180 /* DataManager.swift */,
 				2D351DD3297C700100098180 /* CHAMarathonHRV */,
 				2D351DD2297C700100098180 /* Products */,
 			);
@@ -51,6 +71,7 @@
 		2D351DD3297C700100098180 /* CHAMarathonHRV */ = {
 			isa = PBXGroup;
 			children = (
+				2D351DE2297C707E00098180 /* CHAMarathonHRV.entitlements */,
 				2D351DD4297C700100098180 /* CHAMarathonHRVApp.swift */,
 				2D351DD6297C700100098180 /* ContentView.swift */,
 				2D351DD8297C700100098180 /* Assets.xcassets */,
@@ -83,6 +104,9 @@
 			dependencies = (
 			);
 			name = CHAMarathonHRV;
+			packageProductDependencies = (
+				2D351DFE2985846100098180 /* CryptoSwift */,
+			);
 			productName = CHAMarathonHRV;
 			productReference = 2D351DD1297C700100098180 /* CHAMarathonHRV.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +123,7 @@
 				TargetAttributes = {
 					2D351DD0297C700100098180 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -111,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 2D351DC8297C700000098180;
+			packageReferences = (
+				2D351DFD2985846100098180 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
 			productRefGroup = 2D351DD2297C700100098180 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +166,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D351DD7297C700100098180 /* ContentView.swift in Sources */,
+				2D351DE4297C959B00098180 /* DataManager.swift in Sources */,
+				2D351DEE297E037900098180 /* RRValues.swift in Sources */,
+				2D351DE8297D7DDE00098180 /* BlePeripheral.swift in Sources */,
 				2D351DD5297C700100098180 /* CHAMarathonHRVApp.swift in Sources */,
+				2D351DE6297D7DB900098180 /* CBUUIDs.swift in Sources */,
+				2D351DEC297DFDE200098180 /* RingBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +234,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "CHAMarathonHRV-BridgingHeader.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -254,6 +288,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "CHAMarathonHRV-BridgingHeader.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -264,17 +299,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CHAMarathonHRV/CHAMarathonHRV.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CHAMarathonHRV/Preview Content\"";
 				DEVELOPMENT_TEAM = YE3Y8EE6RK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Uses bluetooth to connect to heart rate monitor";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Uses heart variability data to help determine mood";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -283,6 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = alexcruikshank.CHAMarathonHRV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -293,17 +334,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CHAMarathonHRV/CHAMarathonHRV.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CHAMarathonHRV/Preview Content\"";
 				DEVELOPMENT_TEAM = YE3Y8EE6RK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Uses bluetooth to connect to heart rate monitor";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Uses heart variability data to help determine mood";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +385,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D351DFD2985846100098180 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D351DFE2985846100098180 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D351DFD2985846100098180 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2D351DC9297C700000098180 /* Project object */;
 }
